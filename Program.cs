@@ -72,15 +72,15 @@ namespace Samples
             /**********************************************************/
             //realTimeBars(client);
 
-            /**************************************************************************************/
-            /*** Real time market data operations  - Streamed, Frozen, Delayed or Delayed-Frozen***/
-            /**************************************************************************************/
-            //marketDataType(client);
-
             /**********************************/
             /*** Historical Data operations ***/
             /**********************************/
             historicalDataRequests(client);
+
+            /**************************************************************************************/
+            /*** Real time market data operations  - Streamed, Frozen, Delayed or Delayed-Frozen***/
+            /**************************************************************************************/
+            //marketDataType(client);
 
             /*************************/
             /*** Options Specifics ***/
@@ -165,8 +165,8 @@ namespace Samples
             //pnl(client);
 
             //pnlSingle(client);
-		
-	        /**************************/
+
+            /**************************/
             /*** Algo Orders ***/
             /**************************/
             //TestAlgoSamples(client, nextValidId);
@@ -477,9 +477,9 @@ namespace Samples
             /*** Requesting historical data ***/
             //! [reqhistoricaldata]
             String queryTime = DateTime.Now.ToString("yyyyMMdd HH:mm:ss");
-            //client.reqHistoricalData(1000, ContractSamples.USStock(), queryTime, "7 D", "1 hour", "MIDPOINT", 1, 1, false, null);
+            client.reqHistoricalData(1000, ContractSamples.USStock(), queryTime, "4 D", "1 hour", "MIDPOINT", 1, 1, false, null);
 
-            client.reqHistoricalData(4002, ContractSamples.USOptionContract(), "20180604", "1 day", "1 min", "MIDPOINT", 1, 1, false, null);
+            //client.reqHistoricalData(4002, ContractSamples.USOptionContract(), "20180604", "1 day", "1 min", "MIDPOINT", 1, 1, false, null);
 
             //client.reqHistoricalData(4001, ContractSamples.EurGbpFx(), queryTime, "1 M", "1 day", "MIDPOINT", 1, 1, false, null);
             //client.reqHistoricalData(4002, ContractSamples.EuropeanStock(), queryTime, "10 D", "1 min", "TRADES", 1, 1, false, null);

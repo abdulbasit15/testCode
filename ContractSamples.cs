@@ -216,8 +216,8 @@ namespace Samples
             contract.SecType = "OPT";
             contract.Exchange = "SMART";
             contract.Currency = "USD";
-            contract.LastTradeDateOrContractMonth = "20180608";
-            contract.Strike = 275;
+            contract.LastTradeDateOrContractMonth = "20180615";
+            contract.Strike = 278;
             contract.Right = "C";
             contract.Multiplier = "100";
             //! [optcontract_us]
