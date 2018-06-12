@@ -217,7 +217,7 @@ namespace Samples
             contract.Exchange = "SMART";
             contract.Currency = "USD";
             contract.LastTradeDateOrContractMonth = "20180615";
-            contract.Strike = 278;
+            contract.Strike = 276;
             contract.Right = "C";
             contract.Multiplier = "100";
             //! [optcontract_us]

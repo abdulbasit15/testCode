@@ -70,12 +70,12 @@ namespace Samples
             /**********************************************************/
             /*** Real time market data operations  - Real Time Bars ***/
             /**********************************************************/
-            //realTimeBars(client);
+            realTimeBars(client);
 
             /**********************************/
             /*** Historical Data operations ***/
             /**********************************/
-            historicalDataRequests(client);
+            //historicalDataRequests(client);
 
             /**************************************************************************************/
             /*** Real time market data operations  - Streamed, Frozen, Delayed or Delayed-Frozen***/
